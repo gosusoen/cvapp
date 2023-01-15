@@ -1,0 +1,8 @@
+C:\Users\gkim\source\repos\CvApp\CvApp\obj\Debug\net6.0\CvApp.csproj.AssemblyReference.cache
+C:\Users\gkim\source\repos\CvApp\CvApp\obj\Debug\net6.0\CvApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gkim\source\repos\CvApp\CvApp\obj\Debug\net6.0\CvApp.AssemblyInfoInputs.cache
+C:\Users\gkim\source\repos\CvApp\CvApp\obj\Debug\net6.0\CvApp.AssemblyInfo.cs
+C:\Users\gkim\source\repos\CvApp\CvApp\obj\Debug\net6.0\CvApp.csproj.CoreCompileInputs.cache
+C:\Users\gkim\source\repos\CvApp\CvApp\obj\Debug\net6.0\CvApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gkim\source\repos\CvApp\CvApp\obj\Debug\net6.0\CvApp.RazorAssemblyInfo.cache
+C:\Users\gkim\source\repos\CvApp\CvApp\obj\Debug\net6.0\CvApp.RazorAssemblyInfo.cs
