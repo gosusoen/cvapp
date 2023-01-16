@@ -40,7 +40,7 @@ namespace CvApp.Repositories
             return result;
         }
 
-        public async Task<CvModel> AddCv(CvModel model)
+        public async Task AddCv(CvModel model)
         {
             try
             {
@@ -52,7 +52,7 @@ namespace CvApp.Repositories
             }
         }
 
-        public async Task<CvModel> EditCv(CvModel model)
+        public async Task EditCv(CvModel model)
         {
             try
             {

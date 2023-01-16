@@ -1,8 +1,26 @@
-﻿@{
+﻿@model List<CvApp.Models.CvModel>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<table>
+    <thead>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var item in Model)
+        {
+        <tr>
+            <td>FirstName</td>
+            <td>LastName</td>
+            <td>Email</td>
+        </tr>
+        }
+    </tbody>
+</table>

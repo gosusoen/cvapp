@@ -1,4 +1,5 @@
 ﻿using CvApp.Models;
+using CvApp.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -7,22 +8,39 @@ namespace CvApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private CvAppContext _context;
-        public HomeController(ILogger<HomeController> logger, CvAppContext context)
+        private IDataRepository _repo;
+        public HomeController(ILogger<HomeController> logger, IDataRepository repo)
         {
-            _context = context;
+            _repo = repo;
             _logger = logger;
         }
 
         public IActionResult Index()
         {
+            return View();
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        public IActionResult Create(CvModel model)
+        {
 
             return View();
         }
 
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
+            CvModel model = await _repo.GetCvModel(id);
+            return View(model);
+        }
 
+        public async Task<IActionResult> Edit(CvModel model)
+        {
+            await _repo.EditCv(model);
+            return View(model);
         }
 
         public IActionResult Privacy()

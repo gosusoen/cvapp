@@ -8,5 +8,6 @@
         public string email { get;set; }
         public int Mobile { get; set; }
         public int Degree { get; set; }
+        public IFormFile CvBlob { get; set; }
     }
 }
